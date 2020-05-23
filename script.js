@@ -36,7 +36,7 @@ function checkSlide(e){
     const isHalfShown = slideInAt > image.offsetTop;
     //is it not scrolled past all the way yet?
     const isNotScrolledPast = window.scrollY < imageBottom;
-    //if statement
+    //if statement to add/remove the classes
     if(isHalfShown && isNotScrolledPast){
       image.classList.add('active');
     } else {
